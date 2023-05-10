@@ -8,7 +8,7 @@ public class ConexionSQLite {
         Connection conexion = null;
         try {
             Class.forName("org.sqlite.JDBC");
-            conexion = DriverManager.getConnection("jdbc:sqlite:productos.db");
+            conexion = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\M\\Documents\\sqlite-tools-win32-x86-3410200\\bd.sqlite");
 
             Statement statement = conexion.createStatement();
             String consulta = "SELECT * FROM mitabla";
